@@ -47,4 +47,8 @@ public class Person {
         this.age = age;
     }
 
+    public void printName(){
+        System.out.println("Name from within class: " + this.name);
+    }
+
 }
