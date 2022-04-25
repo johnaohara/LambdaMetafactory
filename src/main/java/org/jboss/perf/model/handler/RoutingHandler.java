@@ -6,6 +6,7 @@ public class RoutingHandler implements RestHandler{
 
     @Override
     public void handle(AbstractContext requestContext) throws Exception {
+        System.out.println("handle: RoutingHandler");
         requestContext.incCount();
     }
 }

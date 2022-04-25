@@ -7,6 +7,7 @@ public class InputHandler implements RestHandler{
 
     @Override
     public void handle(AbstractContext requestContext) throws Exception {
+        System.out.println("handle: InputHandler");
         requestContext.incCount();
     }
 }

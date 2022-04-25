@@ -43,9 +43,15 @@ public class LibraryTest {
 
         LambdaContextImpl lambdaContext = new LambdaContextImpl(smallHandlerChain);
 
+        lambdaContext.handleSomething();
+
+        System.out.println(lambdaContext.getCount());
+
         randomInvoker.invoke((RandomHandler) smallHandlerChain[0], lambdaContext);
 
         restInvoker.invoke(smallHandlerChain[1], lambdaContext);
+
+        System.out.println(lambdaContext.getCount());
 
 
 //        lambdaContext.handleSomething();

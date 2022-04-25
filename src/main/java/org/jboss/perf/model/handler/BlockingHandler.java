@@ -7,6 +7,7 @@ public class BlockingHandler implements RestHandler{
 
     @Override
     public void handle(AbstractContext requestContext) throws Exception {
+        System.out.println("handle: BlockingHandler");
         requestContext.incCount();
     }
 }
